@@ -25,7 +25,7 @@ export default function HomePage() {
     <div>
       {/* Hero Section */}
       <section
-        className="relative h-screen flex items-center justify-left text-left bg-cover bg-center pl-10"
+        className="relative h-screen flex items-center justify-left text-left bg-cover bg-center pl-10 mt-10"
         style={{
           backgroundImage:
             "url('https://i.postimg.cc/NG4HGnmy/nike-debuts-first-ever-self-lacing-shoe-01.webp')",
