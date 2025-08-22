@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "description": "Description of product 1",
+    "imageUrl": "imgbb.cc.png",
+    "price": 19.99
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "description": "Description of product 2",
+    "imageUrl": "imgbb.cc.png",
+    "price": 29.99
+  },
+  {
+    "id": 3,
+    "name": "ythth",
+    "description": "hnfghf",
+    "imageUrl": "imgbb.cc.png",
+    "price": 4
+  }
+]
