@@ -1,23 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Product 1",
-    "description": "Description of product 1",
-    "imageUrl": "imgbb.cc.png",
-    "price": 19.99
+    "name": "Wireless Bluetooth Earbuds",
+    "description": "Compact, noise-cancelling earbuds with 20 hours of battery life.",
+    "imageUrl": "https://fakeimg.cc/earbuds.png",
+    "price": 49.99
   },
   {
     "id": 2,
-    "name": "Product 2",
-    "description": "Description of product 2",
-    "imageUrl": "imgbb.cc.png",
-    "price": 29.99
+    "name": "Smart Fitness Watch",
+    "description": "Tracks your steps, heart rate, and sleep with a sleek design.",
+    "imageUrl": "https://fakeimg.cc/watch.png",
+    "price": 79.99
   },
   {
     "id": 3,
-    "name": "ythth",
-    "description": "hnfghf",
-    "imageUrl": "imgbb.cc.png",
-    "price": 4
+    "name": "Ergonomic Office Chair",
+    "description": "Adjustable chair with lumbar support for long hours of sitting.",
+    "imageUrl": "https://fakeimg.cc/chair.png",
+    "price": 129.99
+  },
+  {
+    "id": 4,
+    "name": "Stainless Steel Water Bottle",
+    "description": "Insulated bottle keeps drinks cold for 24 hours and hot for 12.",
+    "imageUrl": "https://fakeimg.cc/bottle.png",
+    "price": 24.99
+  },
+  {
+    "id": 5,
+    "name": "Portable Power Bank 20,000mAh",
+    "description": "High-capacity fast-charging power bank with dual USB ports.",
+    "imageUrl": "https://fakeimg.cc/powerbank.png",
+    "price": 39.99
+  },
+  {
+    "id": 6,
+    "name": "4K Action Camera",
+    "description": "Waterproof action camera with 170° wide-angle lens and Wi-Fi.",
+    "imageUrl": "https://fakeimg.cc/camera.png",
+    "price": 99.99
   }
 ]
