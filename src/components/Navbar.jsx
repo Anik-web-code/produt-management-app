@@ -10,13 +10,13 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/10 dark:bg-gray-900/20 backdrop-blur-md shadow-md">
-      <div className="max-w-7xl text-blue-500 mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-[1435px] text-blue-500 mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link
           href="/"
           className="text-2xl font-extrabold dark:text-white hover:text-blue-400 transition"
         >
-          StealDeal
+          Steal<span className="text-blue-500">Deal</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -48,12 +48,14 @@ export default function Navbar() {
 
           {/* Login/Logout Button */}
           {!session ? (
-            <button
-              onClick={() => signIn("google", { callbackUrl: "/products" })}
-              className="ml-4 px-4 py-2 bg-blue-600 rounded text-white hover:bg-blue-700 transition"
-            >
-              Login
-            </button>
+            <Link href="/login">
+              <button
+                to="/login"
+                className="ml-4 px-4 py-2 bg-blue-600 rounded text-white hover:bg-blue-700 transition"
+              >
+                Login
+              </button>
+            </Link>
           ) : (
             <button
               onClick={() => signOut({ callbackUrl: "/" })}
@@ -148,15 +150,18 @@ export default function Navbar() {
 
           {/* Mobile Login/Logout */}
           {!session ? (
-            <button
-              onClick={() => {
-                signIn("google", { callbackUrl: "/products" });
-                setMenuOpen(false);
-              }}
-              className="mt-2 px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 transition"
-            >
-              Login
-            </button>
+            <Link href="/login">
+              <button
+                // onClick={() => {
+                //   signIn("google", { callbackUrl: "/products" });
+                //   setMenuOpen(false);
+                // }}
+
+                className="mt-2 px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 transition"
+              >
+                Login
+              </button>
+            </Link>
           ) : (
             <button
               onClick={() => {
