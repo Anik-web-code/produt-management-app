@@ -3,42 +3,42 @@
     "id": 1,
     "name": "Wireless Bluetooth Earbuds",
     "description": "Compact, noise-cancelling earbuds with 20 hours of battery life.",
-    "imageUrl": "https://fakeimg.cc/earbuds.png",
+    "imageUrl": "https://i.postimg.cc/v8WkjYrR/air-mini-2-01-500x500.webp",
     "price": 49.99
   },
   {
     "id": 2,
     "name": "Smart Fitness Watch",
     "description": "Tracks your steps, heart rate, and sleep with a sleek design.",
-    "imageUrl": "https://fakeimg.cc/watch.png",
+    "imageUrl": "https://i.postimg.cc/X7PfkFrn/lmaiwescgjgvsdga.jpg",
     "price": 79.99
   },
   {
     "id": 3,
     "name": "Ergonomic Office Chair",
     "description": "Adjustable chair with lumbar support for long hours of sitting.",
-    "imageUrl": "https://fakeimg.cc/chair.png",
+    "imageUrl": "https://i.postimg.cc/d3VsW4W3/ergonomic-chair-black-color-front-view.webp",
     "price": 129.99
   },
   {
     "id": 4,
     "name": "Stainless Steel Water Bottle",
     "description": "Insulated bottle keeps drinks cold for 24 hours and hot for 12.",
-    "imageUrl": "https://fakeimg.cc/bottle.png",
+    "imageUrl": "https://i.postimg.cc/tJvX8Wf5/46a29c6b36e247b5e298a6fb0a12b183-jpg-720x720q80.jpg",
     "price": 24.99
   },
   {
     "id": 5,
-    "name": "Portable Power Bank 20,000mAh",
+    "name": "Portable Power Bank",
     "description": "High-capacity fast-charging power bank with dual USB ports.",
-    "imageUrl": "https://fakeimg.cc/powerbank.png",
+    "imageUrl": "https://i.postimg.cc/qMgByDhZ/giant-182702.jpg",
     "price": 39.99
   },
   {
     "id": 6,
     "name": "4K Action Camera",
     "description": "Waterproof action camera with 170° wide-angle lens and Wi-Fi.",
-    "imageUrl": "https://fakeimg.cc/camera.png",
+    "imageUrl": "https://i.postimg.cc/vB3M65Qs/e4308f36f408ed5dd71f1f45ee733469.jpg",
     "price": 99.99
   }
 ]

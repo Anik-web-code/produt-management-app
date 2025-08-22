@@ -36,11 +36,11 @@ export default function ProductsPage() {
             className="bg-white dark:bg-gray-900 rounded-2xl shadow-lg hover:shadow-2xl transition relative overflow-hidden group"
           >
             {/* Product Image */}
-            <div className="w-full h-56 overflow-hidden">
+            <div className="w-full h-[350px] overflow-hidden">
               <img
-                src={product.image}
+                src={product.imageUrl}
                 alt={product.name}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
             </div>
 

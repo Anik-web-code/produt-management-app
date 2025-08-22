@@ -8,7 +8,12 @@ import toast from "react-hot-toast";
 export default function AddProductPage() {
   const { data: session, status } = useSession();
   const router = useRouter();
-  const [form, setForm] = useState({ name: "", description: "", price: "" });
+  const [form, setForm] = useState({
+    name: "",
+    description: "",
+    price: "",
+    imageUrl: "",
+  });
 
   if (status === "loading") return <p>Loading...</p>;
   if (status === "unauthenticated") {
@@ -23,7 +28,10 @@ export default function AddProductPage() {
       const res = await fetch(`${window.location.origin}/api/products`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...form, price: parseFloat(form.price) }),
+        body: JSON.stringify({
+          ...form,
+          price: parseFloat(form.price),
+        }),
       });
 
       if (!res.ok) {
@@ -73,7 +81,9 @@ export default function AddProductPage() {
             <textarea
               placeholder="Write product description..."
               value={form.description}
-              onChange={(e) => setForm({ ...form, description: e.target.value })}
+              onChange={(e) =>
+                setForm({ ...form, description: e.target.value })
+              }
               className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
               rows={4}
               required
@@ -90,6 +100,21 @@ export default function AddProductPage() {
               placeholder="Enter price"
               value={form.price}
               onChange={(e) => setForm({ ...form, price: e.target.value })}
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+              required
+            />
+          </div>
+
+          {/* Image URL */}
+          <div>
+            <label className="block mb-2 text-sm font-medium text-gray-700 dark:text-gray-300">
+              Image URL
+            </label>
+            <input
+              type="url"
+              placeholder="Enter product image URL"
+              value={form.imageUrl}
+              onChange={(e) => setForm({ ...form, imageUrl: e.target.value })}
               className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
               required
             />
