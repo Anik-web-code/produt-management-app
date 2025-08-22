@@ -10,17 +10,17 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-white/10 dark:bg-gray-900/20 backdrop-blur-md shadow-md">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="max-w-7xl text-blue-500 mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link
           href="/"
-          className="text-2xl font-extrabold text-white dark:text-white hover:text-blue-400 transition"
+          className="text-2xl font-extrabold dark:text-white hover:text-blue-400 transition"
         >
           StealDeal
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-6 items-center text-white dark:text-white">
+        <ul className="hidden text-blue-500 font-medium text-[17px] md:flex gap-6 items-center dark:text-white">
           <li>
             <Link href="/" className="hover:text-blue-400 transition">
               Home
@@ -50,14 +50,14 @@ export default function Navbar() {
           {!session ? (
             <button
               onClick={() => signIn("google", { callbackUrl: "/products" })}
-              className="ml-4 px-4 py-2 bg-blue-600 rounded hover:bg-blue-700 transition"
+              className="ml-4 px-4 py-2 bg-blue-600 rounded text-white hover:bg-blue-700 transition"
             >
               Login
             </button>
           ) : (
             <button
               onClick={() => signOut({ callbackUrl: "/" })}
-              className="ml-4 px-4 py-2 bg-red-600 rounded hover:bg-red-700 transition"
+              className="ml-4 px-4 py-2 text-white bg-red-600 rounded hover:bg-red-700 transition"
             >
               Logout
             </button>
@@ -99,11 +99,11 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="md:hidden bg-white/10 dark:bg-gray-900/20 backdrop-blur-md px-6 py-4 flex flex-col gap-4 text-white dark:text-white">
+        <ul className="text-blue-500 md:hidden bg-white/10  dark:bg-gray-900/20 backdrop-blur-md px-6 py-4 flex flex-col gap-4 dark:text-white">
           <li>
             <Link
               href="/"
-              className="hover:text-blue-400 transition"
+              className="text-blue-500 hover:text-blue-400 transition"
               onClick={() => setMenuOpen(false)}
             >
               Home
